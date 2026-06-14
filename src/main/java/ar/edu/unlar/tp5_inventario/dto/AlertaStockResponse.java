@@ -1,5 +1,11 @@
 package ar.edu.unlar.tp5_inventario.dto;
+import ar.edu.unlar.tp5_inventario.model.NivelAlerta;
 
-public class AlertaStockResponse {
+//DTO exclusivo para el reporte de productos con problemas de stock.
 
-}
+public record AlertaStockResponse(
+        Long id,
+        String nombre,
+        int stockActual,
+        NivelAlerta nivelAlerta
+) {}
