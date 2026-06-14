@@ -1,5 +1,10 @@
 package ar.edu.unlar.tp5_inventario.dto;
 
-public class CategoriaResponse {
 
-}
+ // DTO para la exposición de datos de una Categoría hacia el cliente HTTP.
+
+public record CategoriaResponse(
+        Long id,
+        String nombre,
+        String descripcion
+) {}
