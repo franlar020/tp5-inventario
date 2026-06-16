@@ -14,12 +14,6 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDateTime;
 import java.util.List;
 
-/**
- * Implementación del servicio de movimientos.
- *
- * @author Grupo 3 — Inventario Inteligente
- * @since 1.0
- */
 @Service
 public class MovimientoServiceImpl implements MovimientoService {
 
