@@ -7,11 +7,8 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-/**
- 
-Implementación del servicio de alertas inyectando una estrategia dinámica de evaluación.*
-@author Grupo 3 — Inventario Inteligente
-@since 1.0*/
+// Implementación del servicio de alertas inyectando una estrategia dinámica de evaluación.*
+
 @Service
 public class AlertaServiceImpl implements AlertaService {
 
