@@ -14,12 +14,6 @@ import java.util.Map;
 @Service
 public class PerformanceReportService {
 
-    /**
-     * Genera el reporte de performance ejecutando pruebas con 1k, 10k y 100k registros.
-     *
-     * @return lista de métricas formateadas para exponer en JSON
-     * @since 1.0
-     */
     public List<MetricaPerformance> generarReporte() {
         List<MetricaPerformance> reporte = new ArrayList<>();
         int[] volumenes = {1000, 10000, 100000};
@@ -71,9 +65,6 @@ public class PerformanceReportService {
         return reporte;
     }
 
-    /**
-     * Carga datos ficticios en el repositorio temporal.
-     */
     private void poblarRepositorio(InMemoryProductoRepository repo, int cantidad) {
         Categoria catDump = new Categoria(1L, "Dummy Category", "Dummy Description");
         for (int i = 1; i <= cantidad; i++) {
